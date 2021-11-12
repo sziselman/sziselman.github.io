@@ -5,7 +5,7 @@ description: 'Robotics Engineer'
 site_description: 
 logo:
 favicon: 'assets/images/favicon.ico'
-baseurl: sziselman
+# baseurl: 'sziselman'
 production_url: https://forma.netlify.com/
 disqus: 'justgoodthemes'
 mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
@@ -32,7 +32,7 @@ linkedin: 'sarah-ziselman'
 navigation:
   - text: About
     url: /about/
-  - text: Style Guide
+  - text: Projects
     url: /style-guide/
   - text: Contact Me
     url: /contact/

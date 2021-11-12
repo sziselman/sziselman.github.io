@@ -38,11 +38,11 @@ post_class: post-template
                     {% endfor %}
                 </p>
                 {% endif %}
-                <div class="share-links">
+                <!-- <div class="share-links">
                     <span class="meta-before">Share:</span>
                     <a target="_blank" href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ site.production_url }}{{ page.url | remove_first: '/' }}"><i class="fa-twitter" aria-hidden="true"></i><span class="screen-reader-text">Twitter</span></a>
                     <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url }}{{ page.url | remove_first: '/' }}"><i class="fa-facebook" aria-hidden="true"></i><span class="screen-reader-text">Facebook</span></a>
-                </div><!-- .share-post -->
+                </div>.share-post -->
             </footer>
             {% for author in site.data.authors %}
             {% if author[1].username == page.author %}

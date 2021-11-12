@@ -13,26 +13,26 @@ title: Contact Me
   <main id="main" class="site-main inner">
     <div class="entry-content">
       <header class="entry-header">
-      <h1 class="entry-title">Contact Me</h1>
+      <h1 class="entry-title">Let's get to know each other</h1>
       </header>
-      {% if site.contact_page_description %}
+      <!-- {% if site.contact_page_description %}
         <p>{{ site.contact_page_description }}</p>
       {{else}}
-      {% endif %}
+      {% endif %} -->
       <section class="contact-form">
         <form action="https://formspree.io/{{ site.email }}" method="post" id="contact-form">
           <div class="form-item">
-            <label class="form-label">Your Email <span>(required)</span></label>
+            <label class="form-label">Your Email</label>
             <input type="text" name="email" placeholder="Your email address..." class="form-input" />
           </div>
 
           <div class="form-item">
-            <label class="form-label">Your Name <span>(required)</span></label>
+            <label class="form-label">Your Name</label>
             <input type="text" name="name" placeholder="Your name..." class="form-input" />
           </div>
 
           <div class="form-item">
-            <label class="form-label">Your Message <span>(required)</span></label>
+            <label class="form-label">Your Message</label>
             <textarea name="message" placeholder="Your message..." class="form-textarea"></textarea>
           </div>
 
