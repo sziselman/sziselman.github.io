@@ -14,8 +14,6 @@ Simultaneous Localization and Mapping is a method of building a map of an unknow
 
 The objective of this project is to build a simulated world and allow the Turtlebot to navigate freely (controlled by the user) in order to build a map of its surroundings.
 
-## Hardware and Software Requirements
-
 ## Feature Detection
 
 ## Extended Kalman Filter

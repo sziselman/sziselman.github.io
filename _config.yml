@@ -34,6 +34,8 @@ navigation:
     url: /about/
   - text: Projects
     url: /style-guide/
+  - text: Personal Interests
+    url: /personal-interests/
   - text: Contact Me
     url: /contact/
 
