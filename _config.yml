@@ -2,10 +2,10 @@
 name: 'Sarah Ziselman'
 description: 'Robotics Engineer'
 # Sidebar about text
-site_description: 'Welcome to my blog. It features topics such as fashion, architecture, travel & design. This blog is about finding balance in life, living with purpose, having fun, and doing what you love.'
+site_description: 
 logo:
 favicon: 'assets/images/favicon.ico'
-baseurl: 
+baseurl: sziselman
 production_url: https://forma.netlify.com/
 disqus: 'justgoodthemes'
 mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
