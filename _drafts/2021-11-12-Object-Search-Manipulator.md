@@ -4,6 +4,8 @@ title:  'Object Search Manipulator'
 tags: [SearchAlgorithms, Manipulation]
 featured_image_thumbnail:
 featured_image: assets/images/posts/2018/12.jpg
+# featured: true
+# hidden: true
 author: Sarah Ziselman
 ---
 
