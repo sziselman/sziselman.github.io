@@ -5,9 +5,9 @@ description: 'Robotics Engineer'
 site_description: 
 logo:
 favicon: 'assets/images/favicon.ico'
-baseurl: 'sziselman'
+baseurl: '/sziselman'
 production_url: https://forma.netlify.com/
-disqus: 'justgoodthemes'
+disqus:
 mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
 # Add your GA Tracking Id
 ga_analytics: 
@@ -20,7 +20,7 @@ thankyou_page_description: "Your message has been successfully sent. We will con
 # Social links
 twitter:
 facebook:
-github: '/sziselman'
+github: 'sziselman'
 codepen:
 dribbble:
 medium:
