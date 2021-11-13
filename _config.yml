@@ -4,7 +4,7 @@ description: 'Robotics Engineer'
 # Sidebar about text
 site_description: 
 logo:
-favicon: 'assets/images/favicon.ico'
+favicon: 'assets/images/s_icon.ico'
 # baseurl: 'https://sziselman.github.io/'
 production_url: 'https://sziselman.github.io'
 disqus:
