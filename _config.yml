@@ -1,39 +1,41 @@
 # Site setings
-name: 'Forma'
-description: 'Bold Theme For Brave People'
+name: 'Sarah Ziselman'
+description: 'Robotics Engineer'
 # Sidebar about text
-site_description: 'Welcome to my blog. It features topics such as fashion, architecture, travel & design. This blog is about finding balance in life, living with purpose, having fun, and doing what you love.'
+site_description: 
 logo:
 favicon: 'assets/images/favicon.ico'
-baseurl: 
-production_url: https://forma.netlify.com/
-disqus: 'justgoodthemes'
+baseurl: ''
+production_url: 'https://sziselman.github.io'
+disqus:
 mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
 # Add your GA Tracking Id
 ga_analytics: 
 
 # Contact form setings
-email: youremail@email.com
+email: sarahziselman2020@u.northwestern.edu
 contact_page_description: "Forma theme comes with a contact form built-in. You can use this form with Formspree service and get up to 50 submissions for free. Also, you can easily switch to another service if you want."
 thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
 
 # Social links
-twitter: 'username'
-facebook: 'username'
-github: 'username'
-codepen: 'username'
-dribbble: 'username'
-medium: '@username'
-instagram: 'username'
-pinterest: 'username'
-linkedin: 'username'
+twitter:
+facebook:
+github: 'sziselman'
+codepen:
+dribbble:
+medium:
+instagram:
+pinterest:
+linkedin: 'sarah-ziselman'
 
 # Navigation
 navigation:
   - text: About
     url: /about/
-  - text: Style Guide
+  - text: Projects
     url: /style-guide/
+  - text: Personal Interests
+    url: /personal-interests/
   - text: Contact Me
     url: /contact/
 
