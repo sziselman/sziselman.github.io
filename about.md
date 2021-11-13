@@ -2,6 +2,7 @@
 layout: page
 title: Get to know me
 featured_image: /assets/images/pages/sarah.jpg
+permalink: /about/
 ---
 
 I am a soon-to-be graduate who received my B.S. and M.S. in Mechanical Engineering with a concentration in Robotics & Controls at Northwestern University. My interests lie in aligning my experience in robotics with my passion for health & fitness through the development of surgical robotic platforms. I seek to be a positive figure and fellow advocate for women in STEM, and hope to pave the way for those who come after me.
