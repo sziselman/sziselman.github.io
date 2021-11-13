@@ -33,7 +33,7 @@ navigation:
   - text: About
     url: /about/
   - text: Projects
-    url: /style-guide/
+    url: /projects/
   - text: Personal Interests
     url: /personal-interests/
   - text: Contact Me
