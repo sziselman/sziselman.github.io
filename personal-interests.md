@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Personal Interests
+permalink: /personal-interests/
 ---
 
 ![sherman](/assets/images/pages/sherman.jpg#left)
