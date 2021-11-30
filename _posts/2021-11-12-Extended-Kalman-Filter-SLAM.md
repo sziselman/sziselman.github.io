@@ -4,14 +4,15 @@ title: 'Extended Kalman Filter SLAM'
 tags: [Navigation, EKF, SLAM]
 featured_image_thumbnail:
 featured_image: assets/images/posts/ekf_slam/ekf_slam.gif
-featured: true
-hidden: true
+# featured: true
+# hidden: true
 author: Sarah Ziselman
 
 ---
 
-## Objective
+This project is from a graduate-level Sensing, Navigating, and Machine Learning for Robotics course taught at Northwestern University. It utilizes ROS Noetic, C++ programming, and the Turtlebot3 differential drive robot. The code for this project can be found on Github [here](https://github.com/sziselman/Shermbot-Navigation).
 
+## Objective
 Simultaneous Localization and Mapping is a method of building a map of an unknown world. This project implements **Extended Kalman Filter SLAM** on a differential drive robot made by ROBOTIS known as the Turtlebot. Built entirely from the bottom-up, this project covers a broad range of areas in robotic software development. The objective of this project is to build a simulated world and allow the Turtlebot to navigate freely (controlled by the user) in order to build a map of its surroundings.
 
 ## The Simulation
