@@ -3,7 +3,7 @@ layout: post
 title:  'Object Search Manipulator'
 tags: [SearchAlgorithms, Manipulation]
 featured_image_thumbnail:
-featured_image: assets/images/posts/obj_search/adroit.png
+featured_image: assets/images/posts/obj_search/search.gif
 featured: true
 hidden: true
 author: Sarah Ziselman
@@ -16,17 +16,23 @@ This project implements Greedy Search, perception, and manipulation in order to 
 
 ## Building the Scene
 The volume of the scene can be described by a [frustum](https://en.wikipedia.org/wiki/Viewing_frustum#/media/File:ViewFrustum.svg),
-<!-- ![frustum](assets/images/posts/obj_search/frustum.png) -->
 <center>
     <img src="assets/images/posts/obj_search/frustum.png" alt="frustum" style="width:400px;"/>
 </center>
 Within each scene, there exists objects. For the sake of simplicity, this project utilizes 0.1 x 0.1 x 0.1 m cubes as objects. The volume of occluded space must be calculated for each object within the scene. This is done by calculating volume of the frustum created by the front plane of the object and the shadow created by the object on the rear plane.
 
+Each scene also has a target object with unknown pose and known geometry. The dimensions of the target object will also be a 0.1 x 0.1 x 0.1 m cube.
+
 ## Motion Planning
 For each object, a trajectory must be generated such that the object is picked up and removed from the scene in order to expose more unexplored space. In order to simplify the trajectory and ensure that the spot at which the object is placed does not interfere with another object, the object is placed at a location rotated by 90 degrees from its original location. Since the starting location of each object is unique, it's placement location will also be unique. Once a trajectory is generated, the execution time is saved and then used to solve for the utility of the object.
 
 ## Greedy Search
-The utility of an object is defined as the volume of occluded space due to that object divided by the time that it takes to execute a trajectory to remove that object. Once the utility of each object is calculated, Greedy Search is implemented such that it finds the most opimal solution. Upon search, an arrangement is returned, which represents the order in which objects need to be removed from the scene. 
+The utility of an object <img src="https://latex.codecogs.com/gif.latex? A" /> is defined as the volume of occluded space due to that object <img src="https://latex.codecogs.com/gif.latex? V_A" /> divided by the time that it takes to execute a trajectory to remove that object <img src="https://latex.codecogs.com/gif.latex? T_A" />. The utility can be described as,
+<center>
+    <img src="https://latex.codecogs.com/gif.latex? U(A)=\frac{V_A}{T_A}" /> 
+</center>
+
+Greedy is an search algorithm that utilizes a heuristic in order to find a locally optimal solution at each stage in the search process. The heuristic of this search is the utility defined above. Once the utility of each object is calculated, Greedy Search is implemented to find an arrangement. An arrangement is defined as the sequence of objects to be removed from the scene.
 
 ## Implementation
 The following four ROS nodes were created that were responsible for carrying out several functionalities. Their publishers, subscribers, and services are described below,
@@ -36,7 +42,9 @@ The following command launches the project:
 ```
 roslaunch greedy_search fake_search.launch
 ```
-The following command launches the greedy search and removes the object with the highest utility from the scene:
+Upon launching the project, the `rviz` window will display the Adroit Manipulator Arm, the objects within the scene highlighted in pink, and the target object highlighted in green.
+
+The following command launches the greedy search and removes the object with the highest utility (highlighted in yellow) from the scene:
 ```
 rosservice call /start_search "{}"
 ```
